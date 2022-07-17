@@ -11,7 +11,6 @@ $this->loadHelper('Authentication.Identity');
     <aside class="column">
         <div class="side-nav">
             <?php if ($this->Identity->isLoggedIn()) : ?>
-                <h4 class="heading"><?= __('Actions') ?></h4>
                 <?= $this->Html->link(__('List Users'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
             <?php endif; ?>
         </div>
